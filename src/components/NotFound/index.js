@@ -1,4 +1,6 @@
 import ThemeContext from '../../context/ThemeContext'
+import NavBar from '../Navbar'
+
 import './index.css'
 
 const NotFound = () => (
@@ -10,6 +12,7 @@ const NotFound = () => (
 
       return (
         <div className={`not-found-container ${theme}`}>
+          <NavBar />
           <div className="not-found-card">
             <img
               src="https://assets.ccbp.in/frontend/react-js/not-found-img.png"
