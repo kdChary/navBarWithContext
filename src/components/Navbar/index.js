@@ -39,12 +39,14 @@ const Navbar = () => (
             </Link>
           </ul>
 
-          <img
-            src={themeImgUrl}
-            alt="theme"
-            className="nav-logo"
+          <button
+            className="theme-btn"
+            type="button"
+            data-testid="theme"
             onClick={onToggleTheme}
-          />
+          >
+            <img src={themeImgUrl} alt="theme" className="nav-logo" />
+          </button>
         </nav>
       )
     }}

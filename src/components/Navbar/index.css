@@ -53,3 +53,8 @@
 .dark-theme-text {
   color: #dcdcdc;
 }
+
+.theme-btn {
+  background-color: transparent;
+  border: none;
+}
