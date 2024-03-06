@@ -6,9 +6,14 @@ import ThemeContext from '../../context/ThemeContext'
 const Navbar = () => (
   <ThemeContext.Consumer>
     {value => {
-      const {isDarkTheme} = value
+      const {isDarkTheme, toggleTheme} = value
+
+      const onToggleTheme = () => {
+        toggleTheme()
+      }
 
       const theme = isDarkTheme ? 'dark-theme' : 'light'
+      const textColor = isDarkTheme ? 'dark-theme-text' : ''
 
       const websiteLogoUrl = isDarkTheme
         ? 'https://assets.ccbp.in/frontend/react-js/website-logo-dark-theme-img.png'
@@ -24,15 +29,20 @@ const Navbar = () => (
 
           <ul className="nav-options-list">
             <Link to="/" className="link-item">
-              <li className="nav-options">Home</li>
+              <li className={`nav-options ${textColor}`}>Home</li>
             </Link>
 
             <Link to="/about" className="link-item">
-              <li className="nav-options">About</li>
+              <li className={`nav-options ${textColor}`}>About</li>
             </Link>
           </ul>
 
-          <img src={themeImgUrl} alt="theme icon" className="nav-logo" />
+          <img
+            src={themeImgUrl}
+            alt="theme icon"
+            className="nav-logo"
+            onClick={onToggleTheme}
+          />
         </nav>
       )
     }}
