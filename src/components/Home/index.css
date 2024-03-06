@@ -1,1 +1,25 @@
-/* Write your CSS here */
+.home-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-card {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+  margin: auto;
+}
+
+.main-icon {
+  width: 130px;
+}
+@media (min-width: 768px) {
+  .main-icon {
+    width: 230px;
+  }
+}

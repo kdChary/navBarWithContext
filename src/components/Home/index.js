@@ -10,7 +10,7 @@ const Home = () => (
       const theme = isDarkTheme ? 'dark-theme' : 'light'
       const textColor = isDarkTheme ? 'dark-theme-text' : ''
 
-      const homeImgUrl = isDarkTheme
+      const homeImgUrl = !isDarkTheme
         ? 'https://assets.ccbp.in/frontend/react-js/home-light-img.png'
         : 'https://assets.ccbp.in/frontend/react-js/home-dark-img.png'
 
