@@ -6,6 +6,11 @@
   justify-content: space-between;
   align-items: center;
   font-family: 'Roboto';
+  border-bottom: solid 3px #dcdcdc;
+}
+.nav-dark {
+  background-color: #333333;
+  border: none;
 }
 
 .nav-logo {
