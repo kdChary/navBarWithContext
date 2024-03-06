@@ -4,21 +4,41 @@
 }
 .light {
   background-color: #ffffff;
+  color: #171f46;
 }
 
 .not-found-container {
   height: 100vh;
   font-family: 'Roboto';
+  display: flex;
+  flex-direction: column;
 }
 
 .not-found-card {
   height: 90vh;
+  width: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  align-self: center;
 }
 
 .not-found-image {
-  width: 30%;
+  width: 150px;
+}
+@media (min-width: 768px) {
+  .not-found-image {
+    width: 230px;
+  }
+}
+
+.not-found-title {
+  margin-bottom: 0;
+  font-weight: 500;
+}
+.not-found-text {
+  font-weight: 500;
+  font-size: 11px;
 }
