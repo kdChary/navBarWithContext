@@ -10,9 +10,19 @@ import ThemeContext from './context/ThemeContext'
 import './App.css'
 
 class App extends Component {
+  state = {isDarkTheme: false}
+
+  toggleTheme = () => {
+    this.setState(prevState => ({isDarkTheme: !prevState.isDarkTheme}))
+  }
+
   render() {
+    const {isDarkTheme} = this.state
+
     return (
-      <ThemeContext.Provider>
+      <ThemeContext.Provider
+        value={{isDarkTheme, toggleTheme: this.toggleTheme}}
+      >
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/about" component={About} />
