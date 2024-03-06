@@ -41,7 +41,7 @@ const Navbar = () => (
 
           <img
             src={themeImgUrl}
-            alt="theme icon"
+            alt="theme"
             className="nav-logo"
             onClick={onToggleTheme}
           />

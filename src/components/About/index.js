@@ -18,7 +18,7 @@ const About = () => (
         <div className={`home-container ${theme}`}>
           <Navbar />
           <div className="home-card">
-            <img src={aboutImgUrl} alt="about icon" className="main-icon" />
+            <img src={aboutImgUrl} alt="about" className="main-icon" />
             <h1 className={`main-heading ${textColor}`}>About</h1>
           </div>
         </div>
