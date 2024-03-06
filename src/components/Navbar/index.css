@@ -1,1 +1,46 @@
-/* Write your CSS here */
+.navbar {
+  height: 10vh;
+  width: 100vw;
+  padding: 3px 13px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Roboto';
+}
+
+.nav-logo {
+  width: 30px;
+}
+@media (min-width: 768px) {
+  .navbar {
+    padding: 3px 23px;
+  }
+  .nav-logo {
+    width: 40px;
+  }
+}
+
+.nav-options-list {
+  display: flex;
+  padding-left: 0;
+  justify-content: space-between;
+}
+
+.link-item {
+  text-decoration: none;
+}
+
+.nav-options {
+  list-style-type: none;
+  font-size: 13px;
+  font-weight: 600;
+  margin-left: 3px;
+  margin-right: 7px;
+  color: #1e293b;
+}
+@media (min-width: 768px) {
+  .nav-options {
+    font-size: 15px;
+    margin-right: 11px;
+  }
+}
